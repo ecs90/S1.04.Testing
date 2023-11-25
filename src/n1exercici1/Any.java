@@ -4,9 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Any {
-    List<String> mesos = new ArrayList<>();
+    private List<String> mesos = new ArrayList<>();
 
-    void populateMonths()
+    public List<String> getMesos() {
+        return mesos;
+    }
+
+    protected void populateMonths()
     {
         mesos.add("Enero");
         mesos.add("Febrero");

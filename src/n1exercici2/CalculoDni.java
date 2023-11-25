@@ -1,8 +1,8 @@
 package n1exercici2;
 
 public class CalculoDni {
-    int number;
-    Character lletra;
+    private int number;
+    private Character lletra;
 
     public CalculoDni(int number) {
         this.number = number;

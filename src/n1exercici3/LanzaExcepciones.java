@@ -1,7 +1,7 @@
 package n1exercici3;
 
 public class LanzaExcepciones {
-    int[] numeros;
+    private int[] numeros;
 
     public LanzaExcepciones() {
         this.numeros = new int[] {};

@@ -11,7 +11,7 @@ public class AnyTest {
         Any any = new Any();
 
         any.populateMonths();
-        assertEquals(12, any.mesos.size(), 0);
+        assertEquals(12, any.getMesos().size(), 0);
     }
 
     @Test
@@ -19,7 +19,7 @@ public class AnyTest {
         Any any = new Any();
 
         any.populateMonths();
-        assertFalse(any.mesos.isEmpty());
+        assertFalse(any.getMesos().isEmpty());
     }
 
     @Test
@@ -27,6 +27,6 @@ public class AnyTest {
         Any any = new Any();
 
         any.populateMonths();
-        assertEquals("Agosto", any.mesos.get(7), "");
+        assertEquals("Agosto", any.getMesos().get(7), "");
     }
 }
