@@ -3,6 +3,7 @@ package n1exercici2;
 public class CalculoDni {
     private int number;
     private Character lletra;
+    private static final String LISTA_LETRA_DNI = "TRWAGMYFPDXBNJZSQVHLCKE";
 
     public CalculoDni(int number) {
         this.number = number;
@@ -22,7 +23,7 @@ public class CalculoDni {
 
     public void calcularLletra(){
         int resto = this.number%23;
-        switch (resto){
+        /*switch (resto){
             case 0:
                 lletra = 'T';
                 break;
@@ -92,6 +93,7 @@ public class CalculoDni {
             case 22:
                 lletra = 'E';
                 break;
-        }
+        }*/
+        lletra = LISTA_LETRA_DNI.charAt(resto);
     }
 }

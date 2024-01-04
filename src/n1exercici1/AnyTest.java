@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class AnyTest {
     @Test
-    public void testPositions() throws Throwable{
+    public void testPositions() {
         Any any = new Any();
 
         any.populateMonths();
@@ -15,7 +15,7 @@ public class AnyTest {
     }
 
     @Test
-    public void testNulidad() throws Throwable{
+    public void testNulidad() {
         Any any = new Any();
 
         any.populateMonths();
@@ -23,7 +23,7 @@ public class AnyTest {
     }
 
     @Test
-    public void testAgust() throws Throwable{
+    public void testAgust() {
         Any any = new Any();
 
         any.populateMonths();
